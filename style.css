@@ -32,7 +32,7 @@ header .col:first-child{
 }
 header .col:nth-child(2){
     width: calc(100% - 169px - 188px);
-    background-color: blue;
+    background-color: #111;
 }
 header .col:last-child{
     width: 188px;
@@ -80,4 +80,109 @@ header .col:last-child>div{
 }
 #ico-world:hover{
     background-color: rgba(128, 128, 128, 1);
+}
+/* navigation */
+#nav-main{
+    height: 100%;
+}
+
+
+#nav-main li{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: .08em;
+    height: 100%;
+}
+
+#nav-main>li a{
+    border-radius: 6.4px;
+    line-height: 15.6px;
+    text-decoration: none;
+    color: white;    
+}
+
+#nav-main>li>a{
+    display: block;
+    padding: 7.5px 16px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nav-main>li:not(.submenu):hover a::after{
+    display: block;
+}
+
+#nav-main>li:not(.submenu) a::after{
+    display: none;
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 44px;
+    height: 4px;
+    background-color: rgb(255, 70, 85);
+    border-radius: 2px 2px 0px 0px;
+}
+
+#nav-main li:hover>a{
+    background-color: rgba(128,128,128,0.3);
+}
+
+#nav-main > li{
+    float: left;
+    margin-right: 4px;
+}
+
+#nav-main .submenu > nav{
+    display: none;
+}
+
+#nav-main .submenu:hover svg path{
+    fill: white;
+}
+
+#nav-main > li.submenu{
+    position: relative;
+}
+
+#nav-main > li.submenu li{
+    padding: 5px 16px 0;
+}
+
+#nav-main > li.submenu li:first-child{
+    padding-top: 16px;
+}
+
+#nav-main > li.submenu li:last-child{
+    padding-bottom: 16px;
+}
+
+#nav-main > li.submenu nav a{
+    display: block;
+    padding: 16px 8px;
+    font-weight: 500;
+}
+
+#nav-main .submenu nav{
+    position: absolute;
+    width: 205px;
+    background-color: #292929;
+    top: 69px;
+}
+
+#nav-main .submenu nav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 4px;
+    background-color: rgb(255, 70, 85);
+    border-radius: 2px 2px 0px 0px;
+}
+
+#nav-main > .submenu:hover nav{
+    display: block;
 }
