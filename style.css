@@ -69,13 +69,14 @@ header .col:last-child>div{
     margin-right: 6px;
     text-align: center;
     cursor: pointer;
+    border-radius: 6.4px;
 }
 #ico-world ion-icon{
     color: white;
     font-size: 1.2rem;
     vertical-align: middle;
     padding-top: 5px;
-    border-radius: 6.4px;
+   
 }
 #ico-world:hover{
     background-color: rgba(128, 128, 128, 1);
