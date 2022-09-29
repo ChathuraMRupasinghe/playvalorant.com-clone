@@ -27,11 +27,12 @@ header>.col{
     float: left;
 }
 header .col:first-child{
-    width: 169px;
-    background-color: red;
+    padding-left: 36px;
+    width: 210px;
+    background-color: #111;
 }
 header .col:nth-child(2){
-    width: calc(100% - 169px - 188px);
+    width: calc(100% - 210px - 188px);
     background-color: #111;
 }
 header .col:last-child{
@@ -185,4 +186,39 @@ header .col:last-child>div{
 
 #nav-main > .submenu:hover nav{
     display: block;
+}
+/* 1st col nav */
+#riot-games{
+    float: left;
+    background-color: #111;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#riot-games:hover svg{
+    fill: #eb0029 !important;
+}
+#riot-games svg:first-child{
+    fill: #f9f9f9;
+}
+#riot-games svg:last-child{
+   line-height: 27px;
+   vertical-align: super;
+   fill: #f9f9f9;
+}
+#logo{
+    height: 100%;
+    padding-left: 22px;
+    float: left;
+    background-color: #111;
+}
+#logo a{
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#logo svg{
+    height: 26px;
 }
